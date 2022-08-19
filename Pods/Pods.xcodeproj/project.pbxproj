@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		043BC0762B663B7F032DBF5692995553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		0A80AC686528C9A585ED8F2E32ADD0D4 /* PasswordChangerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D04C0C6730B8F8055D5DF0784B3CAB /* PasswordChangerViewController.swift */; };
+		0A80AC686528C9A585ED8F2E32ADD0D4 /* PasswordChangerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2314812D518C0729AC00A50BA864E /* PasswordChangerViewController.swift */; };
 		49A2A6B1F0041A8A1CCA573092B70058 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		6812F266BB5B34E9655D157C29BEBF44 /* PasswordChangerSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA4884725F71B7201B738A5B6DEB583 /* PasswordChangerSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6812F266BB5B34E9655D157C29BEBF44 /* PasswordChangerSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B656A953162159F9FF3AC03376C3A288 /* PasswordChangerSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A1EFE07F1DEF6A74D269B3F78E22A63 /* Pods-KnotAPIObjectiveCDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8D725BC004DF2865C1454764BE416B /* Pods-KnotAPIObjectiveCDemo-dummy.m */; };
-		7DFC0F277411E82025284E3FC407B265 /* PasswordChangerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9928298D73399DFA4F5CFC098AC37A /* PasswordChangerSession.swift */; };
-		96B3BCD1547B92241662F1416DEE9BD7 /* PasswordChangerSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9930CA8D11E34D2D61316C0C93C0CE /* PasswordChangerSDK-dummy.m */; };
+		7DFC0F277411E82025284E3FC407B265 /* PasswordChangerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13C5E65FD01891114B1469B973652F /* PasswordChangerSession.swift */; };
+		96B3BCD1547B92241662F1416DEE9BD7 /* PasswordChangerSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE71EC1ED55A76CBF687457A6F1B06 /* PasswordChangerSDK-dummy.m */; };
 		BFF640684569298D60B921C0BE1E1DA8 /* Pods-KnotAPIObjectiveCDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B23126E23788766F294E4210D0FE7B9 /* Pods-KnotAPIObjectiveCDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0D3264321C268C8F479F6EA4A00D458 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B2A7169219E25516B58DC5F2FF125EA4 /* PBXContainerItemProxy */ = {
+		8212AD9EB76D819650A935ECD13EC888 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -29,31 +29,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		151675A2DCD71613CC0CBE3CFD0C7DB1 /* PasswordChangerSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordChangerSDK-prefix.pch"; sourceTree = "<group>"; };
 		183360E96537037C5CDA45E45389E1A3 /* Pods-KnotAPIObjectiveCDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnotAPIObjectiveCDemo-frameworks.sh"; sourceTree = "<group>"; };
-		1D504C7EB56F30DC6E4BF4CFA7B27308 /* PasswordChangerSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PasswordChangerSDK-Info.plist"; sourceTree = "<group>"; };
-		20724C7294BA59732CD66BEE17D6D686 /* PasswordChangerSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PasswordChangerSDK.modulemap; sourceTree = "<group>"; };
-		23C7118C8BB761A6D17B86EE68718A18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		353E7419CFED5B1B31040A6483F61329 /* Pods-KnotAPIObjectiveCDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnotAPIObjectiveCDemo-Info.plist"; sourceTree = "<group>"; };
 		35E8B14785FF723993364FA18E337456 /* Pods-KnotAPIObjectiveCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnotAPIObjectiveCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3B23126E23788766F294E4210D0FE7B9 /* Pods-KnotAPIObjectiveCDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnotAPIObjectiveCDemo-umbrella.h"; sourceTree = "<group>"; };
 		3D162CD198B2B992A897AA9A8433862A /* Pods-KnotAPIObjectiveCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnotAPIObjectiveCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4ECD9E29083327FD6F4EDF4C0306132F /* Pods-KnotAPIObjectiveCDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KnotAPIObjectiveCDemo.modulemap"; sourceTree = "<group>"; };
-		5F9928298D73399DFA4F5CFC098AC37A /* PasswordChangerSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordChangerSession.swift; path = Classes/PasswordChangerSession.swift; sourceTree = "<group>"; };
-		64D04C0C6730B8F8055D5DF0784B3CAB /* PasswordChangerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordChangerViewController.swift; path = Classes/PasswordChangerViewController.swift; sourceTree = "<group>"; };
+		52099D87751FDB1BFF6756178D1EAF15 /* PasswordChangerSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PasswordChangerSDK-Info.plist"; sourceTree = "<group>"; };
 		6860BE6BCC055D013637545363CF36FF /* Pods-KnotAPIObjectiveCDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnotAPIObjectiveCDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		6BB053631AD76C6B4955D058390C40A6 /* PasswordChangerSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasswordChangerSDK.debug.xcconfig; sourceTree = "<group>"; };
-		7F69F5C01B387859323EC3AE420647E0 /* PasswordChangerSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PasswordChangerSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8B9930CA8D11E34D2D61316C0C93C0CE /* PasswordChangerSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PasswordChangerSDK-dummy.m"; sourceTree = "<group>"; };
+		6B7DDCFD35E88E3867A7F60E55E52EB9 /* PasswordChangerSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PasswordChangerSDK.modulemap; sourceTree = "<group>"; };
+		6CF2314812D518C0729AC00A50BA864E /* PasswordChangerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordChangerViewController.swift; path = Classes/PasswordChangerViewController.swift; sourceTree = "<group>"; };
+		73F987B37717FE15B89571B7B1453858 /* PasswordChangerSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasswordChangerSDK.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A18C70F45A85CF8FE1CC42498AC5A627 /* PasswordChangerSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PasswordChangerSDK; path = PasswordChangerSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAA4884725F71B7201B738A5B6DEB583 /* PasswordChangerSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordChangerSDK-umbrella.h"; sourceTree = "<group>"; };
-		C314A32D880BD0E7360F2546E41D5571 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AA13C5E65FD01891114B1469B973652F /* PasswordChangerSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordChangerSession.swift; path = Classes/PasswordChangerSession.swift; sourceTree = "<group>"; };
+		B656A953162159F9FF3AC03376C3A288 /* PasswordChangerSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordChangerSDK-umbrella.h"; sourceTree = "<group>"; };
 		D210519547633D508828F4B3A97BD84B /* Pods-KnotAPIObjectiveCDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KnotAPIObjectiveCDemo"; path = Pods_KnotAPIObjectiveCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D43AB3E2BE3549811BEA5EDB1223C98D /* PasswordChangerSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordChangerSDK-prefix.pch"; sourceTree = "<group>"; };
-		DC5E1738AB3C5CE210AC9ABA586A00AE /* PasswordChangerSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasswordChangerSDK.release.xcconfig; sourceTree = "<group>"; };
 		E848CC0676C06A31BB8F44D88A7BDBC6 /* Pods-KnotAPIObjectiveCDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KnotAPIObjectiveCDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ED71DA7198748633B0930C67D1C501B9 /* PasswordChangerSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasswordChangerSDK.debug.xcconfig; sourceTree = "<group>"; };
+		F0BE71EC1ED55A76CBF687457A6F1B06 /* PasswordChangerSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PasswordChangerSDK-dummy.m"; sourceTree = "<group>"; };
 		FA8D725BC004DF2865C1454764BE416B /* Pods-KnotAPIObjectiveCDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnotAPIObjectiveCDemo-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,19 +75,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1209FA5F00F5960E2FBDB2E028DF75E5 /* Support Files */ = {
+		04A4491370CDC2D1520A3F80589EC688 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				20724C7294BA59732CD66BEE17D6D686 /* PasswordChangerSDK.modulemap */,
-				8B9930CA8D11E34D2D61316C0C93C0CE /* PasswordChangerSDK-dummy.m */,
-				1D504C7EB56F30DC6E4BF4CFA7B27308 /* PasswordChangerSDK-Info.plist */,
-				D43AB3E2BE3549811BEA5EDB1223C98D /* PasswordChangerSDK-prefix.pch */,
-				BAA4884725F71B7201B738A5B6DEB583 /* PasswordChangerSDK-umbrella.h */,
-				6BB053631AD76C6B4955D058390C40A6 /* PasswordChangerSDK.debug.xcconfig */,
-				DC5E1738AB3C5CE210AC9ABA586A00AE /* PasswordChangerSDK.release.xcconfig */,
+				6B7DDCFD35E88E3867A7F60E55E52EB9 /* PasswordChangerSDK.modulemap */,
+				F0BE71EC1ED55A76CBF687457A6F1B06 /* PasswordChangerSDK-dummy.m */,
+				52099D87751FDB1BFF6756178D1EAF15 /* PasswordChangerSDK-Info.plist */,
+				151675A2DCD71613CC0CBE3CFD0C7DB1 /* PasswordChangerSDK-prefix.pch */,
+				B656A953162159F9FF3AC03376C3A288 /* PasswordChangerSDK-umbrella.h */,
+				ED71DA7198748633B0930C67D1C501B9 /* PasswordChangerSDK.debug.xcconfig */,
+				73F987B37717FE15B89571B7B1453858 /* PasswordChangerSDK.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../KnotAPIObjectiveCDemo/Pods/Target Support Files/PasswordChangerSDK";
+			path = "../Target Support Files/PasswordChangerSDK";
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
@@ -99,16 +96,6 @@
 				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		52ADD227F1BB42F64B0866C6ACD5E515 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				23C7118C8BB761A6D17B86EE68718A18 /* LICENSE */,
-				7F69F5C01B387859323EC3AE420647E0 /* PasswordChangerSDK.podspec */,
-				C314A32D880BD0E7360F2546E41D5571 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
@@ -128,24 +115,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		790DFD4598E1A8BF30BBE22A2BDF6E68 /* PasswordChangerSDK */ = {
+		7F13724677F11B664CD88D72F536D341 /* PasswordChangerSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5F9928298D73399DFA4F5CFC098AC37A /* PasswordChangerSession.swift */,
-				64D04C0C6730B8F8055D5DF0784B3CAB /* PasswordChangerViewController.swift */,
-				52ADD227F1BB42F64B0866C6ACD5E515 /* Pod */,
-				1209FA5F00F5960E2FBDB2E028DF75E5 /* Support Files */,
+				AA13C5E65FD01891114B1469B973652F /* PasswordChangerSession.swift */,
+				6CF2314812D518C0729AC00A50BA864E /* PasswordChangerViewController.swift */,
+				04A4491370CDC2D1520A3F80589EC688 /* Support Files */,
 			);
 			name = PasswordChangerSDK;
-			path = ../../PasswordChangerSDK;
-			sourceTree = "<group>";
-		};
-		8745D347A355EED88068B79DA7D7C153 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				790DFD4598E1A8BF30BBE22A2BDF6E68 /* PasswordChangerSDK */,
-			);
-			name = "Development Pods";
+			path = PasswordChangerSDK;
 			sourceTree = "<group>";
 		};
 		B6F9C2B69DC9C676BD0B741D76A580D7 /* Products */ = {
@@ -161,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				8745D347A355EED88068B79DA7D7C153 /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				F9FFFA7AFAEB7D6C05BD4E4D60830450 /* Pods */,
 				B6F9C2B69DC9C676BD0B741D76A580D7 /* Products */,
 				72C70215AF8A817DE459C9A83235FFCA /* Targets Support Files */,
 			);
@@ -183,6 +161,14 @@
 			);
 			name = "Pods-KnotAPIObjectiveCDemo";
 			path = "Target Support Files/Pods-KnotAPIObjectiveCDemo";
+			sourceTree = "<group>";
+		};
+		F9FFFA7AFAEB7D6C05BD4E4D60830450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F13724677F11B664CD88D72F536D341 /* PasswordChangerSDK */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +205,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5ADECAA7C0EF4E8ED2EF18CFD703E750 /* PBXTargetDependency */,
+				3D77B47AB485513E0E7C22F9FA2C4B9F /* PBXTargetDependency */,
 			);
 			name = "Pods-KnotAPIObjectiveCDemo";
 			productName = Pods_KnotAPIObjectiveCDemo;
@@ -311,11 +297,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5ADECAA7C0EF4E8ED2EF18CFD703E750 /* PBXTargetDependency */ = {
+		3D77B47AB485513E0E7C22F9FA2C4B9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PasswordChangerSDK;
 			target = 7DE2216A9A3172C6CC35E5B7BDC18CC7 /* PasswordChangerSDK */;
-			targetProxy = B2A7169219E25516B58DC5F2FF125EA4 /* PBXContainerItemProxy */;
+			targetProxy = 8212AD9EB76D819650A935ECD13EC888 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -388,7 +374,7 @@
 		};
 		0ECC510DCF5721209C4CA74AB23878B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC5E1738AB3C5CE210AC9ABA586A00AE /* PasswordChangerSDK.release.xcconfig */;
+			baseConfigurationReference = 73F987B37717FE15B89571B7B1453858 /* PasswordChangerSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -486,7 +472,7 @@
 		};
 		2FE33647C9E69A2DCB4F80ECDBAF22DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BB053631AD76C6B4955D058390C40A6 /* PasswordChangerSDK.debug.xcconfig */;
+			baseConfigurationReference = ED71DA7198748633B0930C67D1C501B9 /* PasswordChangerSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
