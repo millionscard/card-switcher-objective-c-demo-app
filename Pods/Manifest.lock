@@ -2,15 +2,15 @@ PODS:
   - PasswordChangerSDK (0.1.5)
 
 DEPENDENCIES:
-  - PasswordChangerSDK (= 0.1.5)
+  - PasswordChangerSDK (from `../PasswordChangerSDK/`)
 
-SPEC REPOS:
-  https://github.com/millionscard/pods-repo:
-    - PasswordChangerSDK
+EXTERNAL SOURCES:
+  PasswordChangerSDK:
+    :path: "../PasswordChangerSDK/"
 
 SPEC CHECKSUMS:
-  PasswordChangerSDK: 5df2fda55a8f4ccddc220c7000f3b3c2e15036c3
+  PasswordChangerSDK: e167eaaf4f6da22cf47ed1dcfc5de74ee8192c2d
 
-PODFILE CHECKSUM: e7067ff7dd9175cc65ace348fc19f3cb60e7e3f7
+PODFILE CHECKSUM: 7bd8735bfbb3cb724cb253a1ad36c059a1bb9e0d
 
 COCOAPODS: 1.11.3

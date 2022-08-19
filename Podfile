@@ -5,7 +5,7 @@ source 'https://github.com/millionscard/pods-repo'
 target 'KnotAPIObjectiveCDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'PasswordChangerSDK', '0.1.5'
+  pod 'PasswordChangerSDK', '0.1.6'
 
   # Pods for KnotAPIObjectiveCDemo
 
