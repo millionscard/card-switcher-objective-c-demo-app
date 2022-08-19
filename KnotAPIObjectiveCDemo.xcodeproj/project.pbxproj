@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2839445C8220EF692E98BE20 /* Pods_KnotAPIObjectiveCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5962E32798330401F19580 /* Pods_KnotAPIObjectiveCDemo.framework */; };
 		999003DC28AE83370070C046 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 999003DB28AE83370070C046 /* AppDelegate.m */; };
 		999003DF28AE83370070C046 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 999003DE28AE83370070C046 /* SceneDelegate.m */; };
 		999003E228AE83370070C046 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999003E128AE83370070C046 /* ViewController.m */; };
@@ -14,9 +15,12 @@
 		999003E728AE83390070C046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999003E628AE83390070C046 /* Assets.xcassets */; };
 		999003EA28AE83390070C046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999003E828AE83390070C046 /* LaunchScreen.storyboard */; };
 		999003ED28AE83390070C046 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 999003EC28AE83390070C046 /* main.m */; };
+		999003F528AE86B50070C046 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999003F428AE86B50070C046 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E5962E32798330401F19580 /* Pods_KnotAPIObjectiveCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnotAPIObjectiveCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C79AFC0A5DBDC8550F4B93B /* Pods-KnotAPIObjectiveCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnotAPIObjectiveCDemo.release.xcconfig"; path = "Target Support Files/Pods-KnotAPIObjectiveCDemo/Pods-KnotAPIObjectiveCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		999003D728AE83370070C046 /* KnotAPIObjectiveCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnotAPIObjectiveCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999003DA28AE83370070C046 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		999003DB28AE83370070C046 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +33,9 @@
 		999003E928AE83390070C046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		999003EB28AE83390070C046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999003EC28AE83390070C046 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		999003F328AE86B50070C046 /* KnotAPIObjectiveCDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnotAPIObjectiveCDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		999003F428AE86B50070C046 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C86F92E0FA3E0D4E2F4CF52D /* Pods-KnotAPIObjectiveCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnotAPIObjectiveCDemo.debug.xcconfig"; path = "Target Support Files/Pods-KnotAPIObjectiveCDemo/Pods-KnotAPIObjectiveCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2839445C8220EF692E98BE20 /* Pods_KnotAPIObjectiveCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		189D196E931B4BA784E96D64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E5962E32798330401F19580 /* Pods_KnotAPIObjectiveCDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20F746B65F439880231CAEA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C86F92E0FA3E0D4E2F4CF52D /* Pods-KnotAPIObjectiveCDemo.debug.xcconfig */,
+				4C79AFC0A5DBDC8550F4B93B /* Pods-KnotAPIObjectiveCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		999003CE28AE83370070C046 = {
 			isa = PBXGroup;
 			children = (
 				999003D928AE83370070C046 /* KnotAPIObjectiveCDemo */,
 				999003D828AE83370070C046 /* Products */,
+				20F746B65F439880231CAEA3 /* Pods */,
+				189D196E931B4BA784E96D64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +100,8 @@
 				999003E828AE83390070C046 /* LaunchScreen.storyboard */,
 				999003EB28AE83390070C046 /* Info.plist */,
 				999003EC28AE83390070C046 /* main.m */,
+				999003F428AE86B50070C046 /* File.swift */,
+				999003F328AE86B50070C046 /* KnotAPIObjectiveCDemo-Bridging-Header.h */,
 			);
 			path = KnotAPIObjectiveCDemo;
 			sourceTree = "<group>";
@@ -83,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 999003F028AE83390070C046 /* Build configuration list for PBXNativeTarget "KnotAPIObjectiveCDemo" */;
 			buildPhases = (
+				BE4602D5E47E253DE74A5B59 /* [CP] Check Pods Manifest.lock */,
 				999003D328AE83370070C046 /* Sources */,
 				999003D428AE83370070C046 /* Frameworks */,
 				999003D528AE83370070C046 /* Resources */,
+				0A097EED4BE6D3DD79E059DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,6 +139,7 @@
 				TargetAttributes = {
 					999003D628AE83370070C046 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -141,11 +174,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A097EED4BE6D3DD79E059DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnotAPIObjectiveCDemo/Pods-KnotAPIObjectiveCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnotAPIObjectiveCDemo/Pods-KnotAPIObjectiveCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KnotAPIObjectiveCDemo/Pods-KnotAPIObjectiveCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE4602D5E47E253DE74A5B59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnotAPIObjectiveCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		999003D328AE83370070C046 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999003F528AE86B50070C046 /* File.swift in Sources */,
 				999003E228AE83370070C046 /* ViewController.m in Sources */,
 				999003DC28AE83370070C046 /* AppDelegate.m in Sources */,
 				999003ED28AE83390070C046 /* main.m in Sources */,
@@ -287,9 +363,11 @@
 		};
 		999003F128AE83390070C046 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C86F92E0FA3E0D4E2F4CF52D /* Pods-KnotAPIObjectiveCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RCF226JZTL;
@@ -308,15 +386,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.millions.KnotAPIObjectiveCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "KnotAPIObjectiveCDemo/KnotAPIObjectiveCDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		999003F228AE83390070C046 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C79AFC0A5DBDC8550F4B93B /* Pods-KnotAPIObjectiveCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RCF226JZTL;
@@ -335,6 +418,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.millions.KnotAPIObjectiveCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "KnotAPIObjectiveCDemo/KnotAPIObjectiveCDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
