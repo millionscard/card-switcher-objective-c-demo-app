@@ -1,0 +1,16 @@
+PODS:
+  - PasswordChangerSDK (0.1.5)
+
+DEPENDENCIES:
+  - PasswordChangerSDK (from `../PasswordChangerSDK/`)
+
+EXTERNAL SOURCES:
+  PasswordChangerSDK:
+    :path: "../PasswordChangerSDK/"
+
+SPEC CHECKSUMS:
+  PasswordChangerSDK: e167eaaf4f6da22cf47ed1dcfc5de74ee8192c2d
+
+PODFILE CHECKSUM: 0c216cdc6ff9c7b557312dc94a9501eaf91c51cd
+
+COCOAPODS: 1.11.3
