@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import "PasswordChangerSDK-Swift.h"
+@import CardOnFileSwitcher;
 
 @interface ViewController ()
 
@@ -17,13 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    PasswordChangerSession * session = [PasswordChangerSession new];
+    CardOnFileSwitcherSession * session = [CardOnFileSwitcherSession new];
     [session createSessionWithCompletionHandler:^(NSString *sessionId) {
         NSLog(@"this is session id: %@", sessionId);
         dispatch_async(dispatch_get_main_queue(), ^{
-            PasswordChangerViewController *vc = [[PasswordChangerViewController alloc] initWithSessionId:sessionId];
-            [vc setOnSuccessOnSuccess:^(NSArray<NSString *> *array) {
-                NSLog(@"this is array: %@", array);
+            CardOnFileSwitcherViewController *vc = [[CardOnFileSwitcherViewController alloc] initWithSessionId:sessionId];
+            [vc setOnSuccessOnSuccess:^(NSString * merchant) {
+                NSLog(@"this is error: %@", merchant);
             }];
             [vc setOnErrorOnError:^(NSString *error, NSString *message) {
                 NSLog(@"this is error: %@", error);

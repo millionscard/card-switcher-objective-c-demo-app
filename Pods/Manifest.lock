@@ -1,16 +1,16 @@
 PODS:
-  - PasswordChangerSDK (0.1.5)
+  - CardOnFileSwitcher (0.1.9)
 
 DEPENDENCIES:
-  - PasswordChangerSDK (from `../PasswordChangerSDK/`)
+  - CardOnFileSwitcher (= 0.1.9)
 
-EXTERNAL SOURCES:
-  PasswordChangerSDK:
-    :path: "../PasswordChangerSDK/"
+SPEC REPOS:
+  https://github.com/millionscard/pods-repo.git:
+    - CardOnFileSwitcher
 
 SPEC CHECKSUMS:
-  PasswordChangerSDK: e167eaaf4f6da22cf47ed1dcfc5de74ee8192c2d
+  CardOnFileSwitcher: a2e029fec0f11b0322883db8a5283f1675846bc9
 
-PODFILE CHECKSUM: 7bd8735bfbb3cb724cb253a1ad36c059a1bb9e0d
+PODFILE CHECKSUM: 3447b283191fc22fa7b0e9205a8a09a45936051c
 
 COCOAPODS: 1.11.3
