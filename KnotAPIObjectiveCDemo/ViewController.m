@@ -6,7 +6,6 @@
 //
 
 #import "ViewController.h"
-@import CardOnFileSwitcher;
 
 @interface ViewController ()
 
@@ -17,30 +16,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    CardOnFileSwitcherSession * session = [CardOnFileSwitcherSession new];
-    [session createSessionWithCompletionHandler:^(NSString *sessionId) {
-        NSLog(@"this is session id: %@", sessionId);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            CardOnFileSwitcherViewController *vc = [[CardOnFileSwitcherViewController alloc] initWithSessionId:sessionId];
-            [vc setOnSuccessOnSuccess:^(NSString * merchant) {
-                NSLog(@"this is error: %@", merchant);
-            }];
-            [vc setOnErrorOnError:^(NSString *error, NSString *message) {
-                NSLog(@"this is error: %@", error);
-                NSLog(@"this is message: %@", message);
-            }];
-            [vc setOnEventOnEvent:^(NSString *event, NSString *message) {
-                NSLog(@"this is event: %@", event);
-                NSLog(@"this is message: %@", message);
-            }];
-            [vc setOnExitOnExit:^{
-                NSLog(@"this is exit");
-            }];
-            [self presentViewController:vc animated:NO completion:nil];
-
-        });
-    }];
+    CardOnFileSwitcherSession * session = [[CardOnFileSwitcherSession alloc] initWithSessionId:@"8785d82b-c0e5-4eff-b1a9-568ea8a13742"];
+    [session setPrimaryColorWithPrimaryColor:@"#000000"];
+    [session setTextColorWithTextColor:@"#FFFFFF"];
+    [session setCompanyNameWithCompanyName:@"Found"];
+    [session openOnCardFileSwitcherWithMerchants:@[]];
 }
 
+- (void)onSuccessWithMerchant:(NSString *)merchant{
+    NSLog(@"onSuccessWithMerchant %@", merchant);
+}
 
+- (void)onEventWithEvent:(NSString *)event message:(NSString *)message{
+    NSLog(@"onEventWithEvent %@ %@", event, message);
+}
+
+- (void)onErrorWithError:(NSString *)error message:(NSString *)message{
+    NSLog(@"onErrorWithError %@ %@", error, message);
+}
+
+- (void)onExit{
+    NSLog(@"onExit");
+}
+
+- (void)onFinished{
+    NSLog(@"onFinished");
+
+}
 @end
