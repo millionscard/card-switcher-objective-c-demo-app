@@ -1,16 +1,16 @@
 PODS:
-  - CardOnFileSwitcher (0.1.9)
+  - KnotAPI (0.1.15)
 
 DEPENDENCIES:
-  - CardOnFileSwitcher (= 0.1.9)
+  - KnotAPI (= 0.1.15)
 
 SPEC REPOS:
-  https://github.com/millionscard/pods-repo.git:
-    - CardOnFileSwitcher
+  trunk:
+    - KnotAPI
 
 SPEC CHECKSUMS:
-  CardOnFileSwitcher: a2e029fec0f11b0322883db8a5283f1675846bc9
+  KnotAPI: 1e0f75e4d9719bc89f97188d25c738ed108e6b9e
 
-PODFILE CHECKSUM: 3447b283191fc22fa7b0e9205a8a09a45936051c
+PODFILE CHECKSUM: 87b2e5ac765840c1f5b60cebe7ccf637ed85b81a
 
 COCOAPODS: 1.11.3

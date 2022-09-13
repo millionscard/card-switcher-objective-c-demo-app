@@ -21,6 +21,7 @@
     [session setTextColorWithTextColor:@"#FFFFFF"];
     [session setCompanyNameWithCompanyName:@"Found"];
     [session openOnCardFileSwitcherWithMerchants:@[]];
+    [session setDelegateWithDelegate:self];
 }
 
 - (void)onSuccessWithMerchant:(NSString *)merchant{
