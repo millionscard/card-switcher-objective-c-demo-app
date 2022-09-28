@@ -15,12 +15,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
 
-    CardOnFileSwitcherSession * session = [[CardOnFileSwitcherSession alloc] initWithSessionId:@"8785d82b-c0e5-4eff-b1a9-568ea8a13742"];
+- (IBAction)openCardSwitcher:(id)sender {
+    CardOnFileSwitcherSession * session = [[CardOnFileSwitcherSession alloc] initWithSessionId:@"9c361eed-f86c-4db7-8adb-92caca93f8d9" clientId:@"ab86955e-22f4-49c3-97d7-369973f4cb9e" environment:EnvironmentSandbox];
     [session setPrimaryColorWithPrimaryColor:@"#000000"];
     [session setTextColorWithTextColor:@"#FFFFFF"];
-    [session setCompanyNameWithCompanyName:@"Found"];
+    [session setCompanyNameWithCompanyName:@"Millions"];
     [session openOnCardFileSwitcherWithMerchants:@[]];
+    [session setDelegateWithDelegate:self];
+}
+- (IBAction)openSubscriptionCanceller:(id)sender {
+    CardOnFileSwitcherSession * session = [[CardOnFileSwitcherSession alloc] initWithSessionId:@"9c361eed-f86c-4db7-8adb-92caca93f8d9" clientId:@"ab86955e-22f4-49c3-97d7-369973f4cb9e" environment:EnvironmentSandbox];
+    [session setPrimaryColorWithPrimaryColor:@"#000000"];
+    [session setTextColorWithTextColor:@"#FFFFFF"];
+    [session setCompanyNameWithCompanyName:@"Millions"];
+    [session openOnSubscriptionCancelerWithMerchants:@[]];
     [session setDelegateWithDelegate:self];
 }
 
