@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zt9-qH-rpu">
                                 <rect key="frame" x="74.333333333333329" y="362" width="241.66666666666669" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4c-la-48M">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4c-la-48M">
                                         <rect key="frame" x="0.0" y="0.0" width="241.66666666666666" height="50"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <constraints>
@@ -30,17 +30,17 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Open Card switcher"/>
                                         <connections>
-                                            <action selector="openCardSwitcher:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pi5-EC-2k2"/>
+                                            <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vuf-49-BNn"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zj-Ht-8vl">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zj-Ht-8vl">
                                         <rect key="frame" x="0.0" y="70" width="241.66666666666666" height="50"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Open Subscription Canceller"/>
                                         <connections>
-                                            <action selector="openSubscriptionCanceller:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fiY-Ti-lfj"/>
+                                            <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rgn-iJ-cui"/>
                                         </connections>
                                     </button>
                                 </subviews>
