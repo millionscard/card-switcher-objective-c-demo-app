@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "KnotAPI/KnotAPI-Swift.h"
 
-@interface ViewController : UIViewController<CardOnFileDelegate>
+@interface ViewController : UIViewController
 
 
 @end

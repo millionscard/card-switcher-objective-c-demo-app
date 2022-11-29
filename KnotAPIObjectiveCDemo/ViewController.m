@@ -50,9 +50,6 @@ bool isFromSwicher;
     
     [urlRequest setHTTPMethod:@"POST"];
     [urlRequest setHTTPBody:data1];
-    [urlRequest addValue:@"sandbox" forHTTPHeaderField:@"Environment"];
-    [urlRequest addValue:@"ab86955e-22f4-49c3-97d7-369973f4cb9e" forHTTPHeaderField:@"Client-Id"];
-    [urlRequest addValue:@"d1a5cde831464cd3840ccf762f63ceb7" forHTTPHeaderField:@"Client-Secret"];
     if([token  isEqual: @""]){
         [urlRequest addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     }
@@ -75,20 +72,58 @@ bool isFromSwicher;
             else{
                 NSString *sessionID = [responseDictionary objectForKey:@"session"];
                 if (isFromSwicher == true) {
-                    CardOnFileSwitcherSession * session = [[CardOnFileSwitcherSession alloc] initWithSessionId:sessionID clientId:@"ab86955e-22f4-49c3-97d7-369973f4cb9e" environment:EnvironmentSandbox];
+                    CardOnFileSwitcherSession * session = [[CardOnFileSwitcherSession alloc] initWithSessionId:sessionID clientId:@"3f4acb6b-a8c9-47bc-820c-b0eaf24ee771" environment:EnvironmentSandbox];
                     [session setPrimaryColorWithPrimaryColor:@"#000000"];
                     [session setTextColorWithTextColor:@"#FFFFFF"];
-                    [session setCompanyNameWithCompanyName:@"Millions"];
-                    [session openOnCardFileSwitcherWithMerchants:@[]];
-                    [session setDelegateWithDelegate:self];
+                    [session setCompanyNameWithCompanyName:@"Rho"];
+                    
+                    CardSwitcherConfiguration *cardSwitcherConfig = [[CardSwitcherConfiguration alloc] init];
+                    [cardSwitcherConfig setOnSuccessOnSuccess:^(NSString *merchant) {
+                        NSLog(@"CardSwitcher Merchant:- %@",merchant);
+                    }];
+                    [cardSwitcherConfig setOnExitOnExit:^{
+                        NSLog(@"CardSwitcher onExit");
+                    }];
+                    [cardSwitcherConfig setOnErrorOnError:^(NSString * error, NSString * message) {
+                        NSLog(@"CardSwitcher Error:- %@ Message: %@",error, message);
+                    }];
+                    [cardSwitcherConfig setOnEventOnEvent:^(NSString * event, NSString * message) {
+                        NSLog(@"CardSwitcher Event:- %@ Merchant: %@",error, message);
+                    }];
+                    [cardSwitcherConfig setOnFinishedOnFinished:^{
+                        NSLog(@"CardSwitcher Finished");
+                    }];
+                    [session setConfigurationWithConfig:cardSwitcherConfig];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [session openCardOnFileSwitcher];
+                    });
                 }
                 else {
-                    CardOnFileSwitcherSession * session = [[CardOnFileSwitcherSession alloc] initWithSessionId:sessionID clientId:@"ab86955e-22f4-49c3-97d7-369973f4cb9e" environment:EnvironmentSandbox];
+                    SubscriptionCancelerSession * session = [[SubscriptionCancelerSession alloc] initWithSessionId:sessionID clientId:@"3f4acb6b-a8c9-47bc-820c-b0eaf24ee771" environment:EnvironmentSandbox];
                     [session setPrimaryColorWithPrimaryColor:@"#000000"];
                     [session setTextColorWithTextColor:@"#FFFFFF"];
                     [session setCompanyNameWithCompanyName:@"Millions"];
-                    [session openOnSubscriptionCancelerWithMerchants:@[]];
-                    [session setDelegateWithDelegate:self];
+                    [session setAmountWithAmount:true];
+                    SubscriptionCancelerConfiguration *config = [[SubscriptionCancelerConfiguration alloc] init];
+                    [config setOnSuccessOnSuccess:^(NSString *merchant) {
+                        NSLog(@"SubscriptionCanceler onSuccess Merchant:- %@",merchant);
+                    }];
+                    [config setOnExitOnExit:^{
+                        NSLog(@"SubscriptionCanceler onExit");
+                    }];
+                    [config setOnErrorOnError:^(NSString * error, NSString * message) {
+                        NSLog(@"SubscriptionCanceler Error:- %@ Message: %@",error, message);
+                    }];
+                    [config setOnEventOnEvent:^(NSString * event, NSString * message) {
+                        NSLog(@"SubscriptionCanceler Event:- %@ Merchant: %@",error, message);
+                    }];
+                    [config setOnFinishedOnFinished:^{
+                        NSLog(@"SubscriptionCanceler Finished");
+                    }];
+                    [session setConfigurationWithConfiguration: config];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [session openSubscriptionCanceler];
+                    });
                 }
             }
         }
@@ -100,24 +135,4 @@ bool isFromSwicher;
     [dataTask resume];
 }
 
-- (void)onSuccessWithMerchant:(NSString *)merchant{
-    NSLog(@"onSuccessWithMerchant %@", merchant);
-}
-
-- (void)onEventWithEvent:(NSString *)event message:(NSString *)message{
-    NSLog(@"onEventWithEvent %@ %@", event, message);
-}
-
-- (void)onErrorWithError:(NSString *)error message:(NSString *)message{
-    NSLog(@"onErrorWithError %@ %@", error, message);
-}
-
-- (void)onExit{
-    NSLog(@"onExit");
-}
-
-- (void)onFinished{
-    NSLog(@"onFinished");
-
-}
 @end
