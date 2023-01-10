@@ -39,6 +39,11 @@ bool isFromSwicher;
 -(void)apiCallCreateSession:(NSString *)token{
     NSString *urlString = @"https://sample.knotapi.com/api/knot/session";
     NSDictionary *dict = [[NSDictionary alloc] init];
+    if(isFromSwicher){
+        dict = @{ @"type" : @"card_switcher"};
+    }else{
+        dict = @{ @"type" : @"subscription_canceller"};
+    }
     [self apiCall:urlString param:dict token:token];
 }
 
